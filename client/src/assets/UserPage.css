@@ -1,0 +1,120 @@
+.UserPageContainer {
+  width: 100%;
+}
+
+.ProfileContainer {
+}
+
+.ProfilePictureStatsContainer {
+  padding: 1em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profilePicContainer {
+  padding: 5px;
+}
+
+#profilePic {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#profilePic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 5px rgba(81, 81, 237, 0.8);
+}
+
+.name-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  text-decoration: none; /* Remove default underline, if any */
+  position: relative; /* For positioning the pseudo-element */
+  transition: color 0.3s ease-in-out; /* Optional for text color animation */
+}
+
+.name::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Position underline directly under the text */
+  left: 0;
+  width: 0; /* Starts with no width */
+  height: 4px; /* Thickness of the underline */
+  background: rgba(81, 81, 237, 0.8);
+  box-shadow: 0 0 8px rgba(81, 81, 237, 0.8);
+  transition: width 0.4s ease-in-out; /* Smooth animation */
+}
+
+.name:hover::after {
+  width: 100%; /* Expands the underline to cover the text */
+}
+
+.introDiv {
+  width: 400px;
+}
+
+.ownerTag {
+  font-size: 25px;
+}
+
+.ownerStats {
+  display: flex;
+  justify-content: space-around;
+}
+
+.carsRented,
+.carsForRent,
+.rating {
+  width: 100px;
+  height: 200px;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgba(81, 81, 237, 0.8);
+  color: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.carsRented:hover,
+.carsForRent:hover,
+.rating:hover {
+  transform: translateY(-10px); /* Move the div up by 10px on hover */
+  box-shadow: 0 0 20px 5px white;
+}
+
+/* Optional: Add a slight downward animation when hover ends */
+.carsRented,
+.carsForRent,
+.rating {
+  transform: translateY(0); /* Reset position when not hovered */
+}
+
+.ownerTag {
+  margin-bottom: 20px;
+}
+
+.statNO {
+  margin-top: 30px;
+}
+
+.carContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#carImg {
+  width: 100%;
+  margin: 1em;
+  border-radius: 20px;
+}

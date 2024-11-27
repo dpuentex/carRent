@@ -1,0 +1,74 @@
+.HeaderContainer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerName {
+  margin-left: 20px;
+}
+
+.companyLogo {
+  width: 25px;
+  margin-left: 5px;
+}
+
+.headerNav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.topNav {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 3;
+  min-width: 600px;
+}
+
+.userTagDiv {
+  background-color: rgb(81, 81, 237);
+  margin-right: 20px;
+  display: flex;
+  padding: 5px 3px 5px 3px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.userIcon {
+  width: 25px;
+  margin-right: 2px;
+}
+
+.userTag {
+  vertical-align: top;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  /* Adjust breakpoint as needed */
+  .headerNav {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the items */
+    gap: 7px;
+  }
+
+  .topNav {
+    flex-direction: row; /* Adjust alignment for smaller screens */
+    width: 100%;
+  }
+
+  .userTagDiv {
+    margin-right: 0; /* Remove margin to save space */
+    justify-content: center;
+  }
+}
