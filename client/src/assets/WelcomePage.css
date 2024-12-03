@@ -1,5 +1,20 @@
-.WelcomePageContainer {
-  height: 100vh;
+.homeContainerMain {
+  display: flex;
+}
 
-  text-align: center;
+.headerImg {
+  width: 100%;
+}
+
+.homePageImgContainer {
+  display: flex;
+  width: 100%;
+}
+
+.homeImg1 {
+  width: 50%;
+}
+
+.homeImg2 {
+  width: 50%;
 }

@@ -1,4 +1,54 @@
-.MakeContainer {
-  height: 100vh;
+.MakeContainerMain {
   text-align: center;
+  border: solid 3px white;
+  border-radius: 10px;
+  margin: 2em;
+}
+
+.MakeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.makeImageContainer {
+  margin: 10px 0;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.makeImageContainer:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.makeImg1 {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  object-fit: fill;
+
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.makeImageContainer:hover .makeImg1 {
+  transform: scale(1.1);
+}
+
+.carName1 {
+  background-color: black;
+  padding: 10px;
+  margin: 0;
+  position: relative;
+  border-radius: 0 0 10px 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.makeImageContainer:hover .carName1 {
+  background-color: #444;
 }

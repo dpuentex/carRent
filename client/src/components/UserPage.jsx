@@ -1,5 +1,5 @@
 import profilePicture from "../assets/images/21C3D419-30AE-42B0-9F5B-286A1E0B65DE_1_105_c.jpeg";
-
+import PhotoSlider from "./photoSlider";
 import "../assets/UserPage.css";
 
 function UserPage() {
@@ -37,11 +37,7 @@ function UserPage() {
 
       <div className="carPageContainer">
         <div className="carContainer">
-          <img
-            id="carImg"
-            src="https://images5.alphacoders.com/941/thumb-1920-941921.jpg"
-            alt=""
-          />
+          <PhotoSlider />
         </div>
       </div>
     </div>
