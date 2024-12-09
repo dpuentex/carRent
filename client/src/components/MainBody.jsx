@@ -9,6 +9,7 @@ import AboutUs from "./AboutUs";
 import Make from "./Make";
 import Model from "./Model";
 import UserPage from "./UserPage";
+import LoginCreatePage from "./LoginCreatePage";
 
 function MainBody() {
   return (
@@ -23,6 +24,7 @@ function MainBody() {
           <Route path="/make" element={<Make />} />
           <Route path="/model" element={<Model />} />
           <Route path="/user" element={<UserPage />} />
+          <Route path="/login-create" element={<LoginCreatePage />} />
         </Routes>
       </BrowserRouter>
       <Footer />

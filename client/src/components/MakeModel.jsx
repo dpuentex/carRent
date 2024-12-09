@@ -3,12 +3,18 @@ import "../assets/MakeModel.css";
 function MakeModel() {
   return (
     <div className="MakeModelContainer">
-      <a href="/make">Make</a>
-      <a href="/model">Model</a>
+      <div className="MakeModelBoxesHeaderContainer">
+        <h1>Choose how you want to RIDE!</h1>
+      </div>
       <div className="MakeModelBoxes">
-        <div className="MakeBox">
-          <h1>MAKE</h1>
-          <div className="make1">
+        <div className="MakeBoxContainer">
+          <div className="makeTitle">
+            <a href="/make" className="makeTitle">
+              Make
+            </a>
+          </div>
+
+          <div className="makeBox">
             <div className="imageContainer">
               <img
                 className="makeImg"
@@ -18,7 +24,7 @@ function MakeModel() {
               <p className="carName">ASTON MARTIN</p>
             </div>
           </div>
-          <div className="make2">
+          <div className="makeBox">
             <div className="imageContainer">
               <img
                 className="makeImg"
@@ -27,7 +33,7 @@ function MakeModel() {
               <p className="carName">FERRARI</p>
             </div>
           </div>
-          <div className="make3">
+          <div className="makeBox">
             <div className="imageContainer">
               <img
                 className="makeImg"
@@ -37,7 +43,7 @@ function MakeModel() {
               <p className="carName">MERCEDE-BENZ</p>
             </div>
           </div>
-          <div className="make4">
+          <div className="makeBox">
             <div className="imageContainer">
               <img
                 className="makeImg"
@@ -47,7 +53,7 @@ function MakeModel() {
               <p className="carName">BMW</p>
             </div>
           </div>
-          <div className="make5">
+          <div className="makeBox">
             <div className="imageContainer">
               <img
                 className="makeImg"
@@ -56,15 +62,17 @@ function MakeModel() {
               />
               <p className="carName">MCLAREN</p>
             </div>
+            <a href="/make" className="viewMore">
+              VIEW MORE
+            </a>
+          </div>
+        </div>
+        <div className="ModleBoxContainer">
+          <div className="modelTitle">
+            <a href="/model">Model</a>
           </div>
 
-          <a href="/make" className="viewMore">
-            VIEW MORE
-          </a>
-        </div>
-        <div className="ModleBox">
-          <h1>MODEL</h1>
-          <div className="make1">
+          <div className="modelBox">
             <div className="imageContainer">
               <img
                 className="modelImg"
@@ -74,7 +82,7 @@ function MakeModel() {
               <p className="carName">SEDAN</p>
             </div>
           </div>
-          <div className="make2">
+          <div className="modelBox">
             <div className="imageContainer">
               <img
                 className="modelImg"
@@ -84,7 +92,7 @@ function MakeModel() {
               <p className="carName">COUPE</p>
             </div>
           </div>
-          <div className="make3">
+          <div className="modelBox">
             <div className="imageContainer">
               <img
                 className="modelImg"
@@ -94,7 +102,7 @@ function MakeModel() {
               <p className="carName">SUV</p>
             </div>
           </div>
-          <div className="make4">
+          <div className="modelBox">
             <div className="imageContainer">
               <img
                 className="modelImg"
@@ -104,7 +112,7 @@ function MakeModel() {
               <p className="carName">TRUCK</p>
             </div>
           </div>
-          <div className="make5">
+          <div className="modelBox">
             <div className="imageContainer">
               <img
                 className="modelImg"
@@ -113,11 +121,10 @@ function MakeModel() {
               />
               <p className="carName">ADVENTURE</p>
             </div>
+            <a href="/model" className="viewMore">
+              VIEW MORE
+            </a>
           </div>
-
-          <a href="/model" className="viewMore">
-            VIEW MORE
-          </a>
         </div>
       </div>
     </div>

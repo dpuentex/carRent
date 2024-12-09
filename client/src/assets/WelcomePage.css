@@ -1,14 +1,147 @@
 .homeContainerMain {
   display: flex;
+  flex-direction: column;
 }
 
+.homeHeaderDiv {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
 .headerImg {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .homePageImgContainer {
   display: flex;
   width: 100%;
+}
+
+.welcomePageLogoContainer {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  text-align: left;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.welcomePageLogoDiv {
+  display: flex;
+  gap: 10px;
+}
+
+.welcomeTextAnimation {
+  position: relative;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--main-color, #ffffff);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 2s steps(40) forwards, blink 0.6s step-end infinite;
+}
+.companyLogo {
+  display: inline;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 35ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-right: 2px solid var(--main-color, #ffffff);
+  }
+}
+
+.HomeIntroTextContainer {
+  display: flex;
+}
+
+.HomeIntroText {
+  padding: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+}
+
+.placeInput {
+  color: black;
+  display: inline;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.placeInput:focus {
+  border-color: rgb(81, 81, 237);
+}
+
+select:focus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fromDate,
+.fromTime,
+.toDate,
+.toTime {
+  color: black;
+  border-left: solid 1px rgb(81, 81, 237);
+}
+
+.searchBtnContainer {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 0 5px 5px 0;
+}
+
+.searchBtnDiv {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(81, 81, 237);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchBtnDiv:hover {
+  background-color: rgb(60, 60, 200);
+}
+
+.searchBtnImg {
+  width: 20px;
+  height: 20px;
 }
 
 .homeImg1 {
