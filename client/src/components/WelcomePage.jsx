@@ -1,6 +1,12 @@
 import "../assets/WelcomePage.css";
+import { useState } from "react";
 
-const dateSelector = function () {
+const WelcomePage = function () {
+  const [fromDate, setFromDate] = useState("");
+  const [toDate, setToDate] = useState("");
+  const [fromTime, setFromTime] = useState("");
+  const [toTime, setToTime] = useState("");
+
   return (
     <div className="homeContainerMain">
       <div className="inputContainer">
@@ -9,26 +15,63 @@ const dateSelector = function () {
           type="text"
           placeholder="City, State or ZIP"
         />
-        <select name="dateDropdown" className="fromDate">
-          <option value="" disabled selected>
+        {/* Controlled select: use value */}
+        <select
+          name="dateDropdown"
+          className="fromDate"
+          value={fromDate}
+          onChange={(e) => setFromDate(e.target.value)}
+        >
+          <option value="" disabled>
             From Date
           </option>
+          <option value="2024-12-08">December 8, 2024</option>
+          <option value="2024-12-09">December 9, 2024</option>
+          <option value="2024-12-10">December 10, 2024</option>
         </select>
-        <select name="timeDropdown" className="fromTime">
-          <option value="" disabled selected>
+
+        <select
+          name="timeDropdown"
+          className="fromTime"
+          value={fromTime}
+          onChange={(e) => setFromTime(e.target.value)}
+        >
+          <option value="" disabled>
             Pick Up Time
           </option>
+          <option value="08:00">08:00 AM</option>
+          <option value="09:00">09:00 AM</option>
+          <option value="10:00">10:00 AM</option>
         </select>
-        <select name="dateDropdown" className="toDate">
-          <option value="" disabled selected>
-            to Date
+
+        <select
+          name="dateDropdown"
+          className="toDate"
+          value={toDate}
+          onChange={(e) => setToDate(e.target.value)}
+        >
+          <option value="" disabled>
+            To Date
           </option>
+          <option value="2024-12-08">December 8, 2024</option>
+          <option value="2024-12-09">December 9, 2024</option>
+          <option value="2024-12-10">December 10, 2024</option>
         </select>
-        <select name="timeDropdown" className="toTime">
-          <option value="" disabled selected>
+
+        <select
+          name="timeDropdown"
+          className="toTime"
+          value={toTime}
+          onChange={(e) => setToTime(e.target.value)}
+        >
+          <option value="" disabled>
             Drop Off Time
           </option>
+          <option value="06:00">06:00 PM</option>
+          <option value="07:00">07:00 PM</option>
+          <option value="08:00">08:00 PM</option>
         </select>
+
         <div className="searchBtnContainer">
           <div className="searchBtnDiv">
             <img
@@ -38,6 +81,7 @@ const dateSelector = function () {
           </div>
         </div>
       </div>
+
       <div className="homeHeaderDiv">
         <img
           className="headerImg"
@@ -58,6 +102,7 @@ const dateSelector = function () {
           </p>
         </div>
       </div>
+
       <div className="homeIntroContainer">
         <div className="HomeIntroTextContainer">
           <div className="HomeIntroText">
@@ -91,4 +136,4 @@ const dateSelector = function () {
   );
 };
 
-export default dateSelector;
+export default WelcomePage;

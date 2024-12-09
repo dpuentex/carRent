@@ -1,5 +1,5 @@
 import profilePicture from "../assets/images/21C3D419-30AE-42B0-9F5B-286A1E0B65DE_1_105_c.jpeg";
-import PhotoSlider from "./photoSlider";
+
 import "../assets/UserPage.css";
 
 function UserPage() {
@@ -36,9 +36,7 @@ function UserPage() {
       </div>
 
       <div className="carPageContainer">
-        <div className="carContainer">
-          <PhotoSlider />
-        </div>
+        <div className="carContainer"></div>
       </div>
     </div>
   );

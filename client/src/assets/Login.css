@@ -1,0 +1,13 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+input {
+  color: black;
+}
+
+.loginBtn {
+  background-color: blueviolet;
+}

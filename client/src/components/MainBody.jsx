@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WelcomePage from "./WelcomePage";
 import Header from "./Header";
 import "../assets/MainBody.css";
@@ -9,7 +9,9 @@ import AboutUs from "./AboutUs";
 import Make from "./Make";
 import Model from "./Model";
 import UserPage from "./UserPage";
-import LoginCreatePage from "./LoginCreatePage";
+import Login from "./Login";
+import Register from "./Register";
+import Dashboard from "./Dashboard";
 
 function MainBody() {
   return (
@@ -24,10 +26,13 @@ function MainBody() {
           <Route path="/make" element={<Make />} />
           <Route path="/model" element={<Model />} />
           <Route path="/user" element={<UserPage />} />
-          <Route path="/login-create" element={<LoginCreatePage />} />
+          <Route path="/login" element={<Login />} /> {/* Updated path */}
+          <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<Dashboard />} />{" "}
+          {/* Corrected path */}
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </>
   );
 }

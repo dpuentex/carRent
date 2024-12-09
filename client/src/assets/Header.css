@@ -100,7 +100,8 @@
   font-weight: bold;
 }
 
-.sideMenuBtn {
+.sideMenuBtnDiv {
+  align-content: center;
   width: 15%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   border: solid rgb(81, 81, 237) 2px;
@@ -109,10 +110,15 @@
     background-color 0.3s ease-in-out;
 }
 
-.sideMenuBtn:hover {
+.sideMenuBtnDiv:hover {
   background-color: rgb(81, 81, 237);
   transform: scale(1.1);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sideMenuImg {
+  width: 35px;
+  height: 35px;
 }
 
 .userIcon {

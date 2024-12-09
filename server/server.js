@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt");
 const session = require("express-session");
 const flash = require("express-flash");
 const passport = require("passport");
+const cors = require("cors");
 const { pool } = require("./dbConfig");
 const initializePassport = require("./passportConfig");
 
@@ -17,6 +18,15 @@ initializePassport(passport);
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static("public"));
+
+// CORS setup
+app.use(
+  cors({
+    origin: "http://localhost:5173", // Frontend URL
+    methods: ["GET", "POST"],
+    credentials: true, // Allow credentials (cookies)
+  })
+);
 
 app.use(
   session({
